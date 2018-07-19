@@ -71,8 +71,8 @@ public function send_email($subject, $jenis_pesan, $redirect){
    'protocol'  => 'smtp',
    'mailpath'  => '/usr/sbin/sendmail',
    'smtp_host' => 'ssl://smtp.gmail.com',
-   'smtp_user' => 'simpelarema@gmail.com',
-   'smtp_pass' => 'plnmalang123456', 
+   'smtp_user' => 'tryit@gmail.com',
+   'smtp_pass' => 'try', 
    'smtp_port' => 465,
    'smtp_keepalive' => TRUE,
    'smtp_crypto' => 'SSL',
@@ -85,8 +85,8 @@ public function send_email($subject, $jenis_pesan, $redirect){
    'newline'   => "\r\n",
  ];
  $this->load->library('email', $config);
- $this->email->to('tripurwanti05@gmail.com');
- $this->email->from('noreplytestmau@gmail.com','SIMPEL');
+ $this->email->to('try@gmail.com');
+ $this->email->from('try@gmail.com','SIMPEL');
  $this->email->subject(rawurldecode($subject));
  $this->email->message(rawurldecode($jenis_pesan));
  if ($this->email->send()) {
@@ -103,8 +103,8 @@ public function send_email_override($nopel, $jenis_pesan, $jenis_pelanggan){
    'protocol'  => 'smtp',
    'mailpath'  => '/usr/sbin/sendmail',
    'smtp_host' => 'ssl://smtp.gmail.com',
-   'smtp_user' => 'simpelarema@gmail.com',
-   'smtp_pass' => 'plnmalang123456',
+   'smtp_user' => 'tryit@gmail.com',
+   'smtp_pass' => 'try',
    'smtp_port' => 465,
    'smtp_keepalive' => TRUE,
    'smtp_crypto' => 'SSL',
@@ -119,9 +119,9 @@ public function send_email_override($nopel, $jenis_pesan, $jenis_pelanggan){
 //AMBIL DATA EMAIL SELURUH ADMIN
 
  $this->load->library('email', $config);
- $tujuan = "tripurwanti05@gmail.com, mrendra25@gmail.com";
+ $tujuan = "try@gmail.com, try@gmail.com";
  $this->email->to($tujuan);
- $this->email->from('noreplytestmau@gmail.com','SIMPEL');
+ $this->email->from('try@gmail.com','SIMPEL');
  date_default_timezone_set('Asia/Jakarta');
  $tanggal = date('d-m-Y');
 
